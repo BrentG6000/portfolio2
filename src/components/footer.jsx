@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image'
 import { useContext } from 'react'
 import ThemeProvider from './contexts/theme';
 import twitterLogo from '../images/TwitterLogo.png'
@@ -19,17 +20,26 @@ const Footer = () => {
                 </Link> 
             </div>
             <div className='footerIcons'>
-                <a href='https://twitter.com/BrentG6000'>
-                { theme === 'dark' ? <img src={ darkTwitterLogo } alt=''></img>: <img src={ twitterLogo } alt=''></img> }
-                </a>
-                <a href='https://github.com/BrentG6000'>
-                { theme === 'dark' ? <img src={ darkGithubLogo } alt=''></img>: <img src={ githubLogo } alt=''></img> } 
-                </a>
-                <a href='https://www.linkedin.com/in/brent-gustafson-166170a8/'>
-                { theme === 'dark' ? <img src={ darkLinkedInLogo } alt=''></img>: <img src={ linkedInLogo } alt=''></img> }   
-                </a>
+                <Link href='https://twitter.com/BrentG6000'>
+                    {theme === 'dark'
+                        ? <Image src={darkTwitterLogo} alt='' />
+                        : <Image src={twitterLogo} alt='' />
+                    }
+                </Link>
+                <Link href='https://github.com/BrentG6000'>
+                    {theme === 'dark'
+                        ? <Image src={darkGithubLogo} alt='' />
+                        : <Image src={githubLogo} alt='' />
+                    } 
+                </Link>
+                <Link href='https://www.linkedin.com/in/brent-gustafson-166170a8/'>
+                    {theme === 'dark'
+                        ? <Image src={darkLinkedInLogo} alt='' />
+                        : <Image src={linkedInLogo} alt='' />
+                    }   
+                </Link>
             </div>
-            <div className='footerText'>This site was created using ReactJS</div>
+            <div className='footerText'>This site was created using NextJS</div>
         </div>
   )
 }
