@@ -1,0 +1,34 @@
+.footer {
+    font-family: AmericanDesktop;
+    background-color: lightcyan;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    grid-area: 'footer';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid lightgrey;
+    @media(max-width: 720px) {
+      height: 175px;
+    }
+    @media(max-width: 480px) {
+      height: 150px;
+    }
+  }
+
+  .footerIcons {
+    @media(max-width: 480px) {
+      margin-bottom: -10px;
+    }
+  }
+
+  .footerText {
+    color: black;
+    font-size: 14px;
+  }

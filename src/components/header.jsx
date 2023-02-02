@@ -7,16 +7,16 @@ const Header = () => {
 
   return (
     <header>
-      <nav id={ theme ? 'dark' : ''}>
+      <nav id={ theme === 'dark' ? 'dark' : ''}>
         { theme === 'dark'
           ? <div id='activeToggle'>
               <div className='activeIndicator' onClick={() =>  
-                { theme ? setTheme(false) : setTheme(true) }}>
+                { theme === 'dark' ? setTheme('light') : setTheme('dark') }}>
               </div>
             </div>
           : <div id='toggle'>
               <div className='indicator' onClick={ () =>  
-                { theme ? setTheme(false) : setTheme(true) }}>
+                { theme === 'dark' ? setTheme('light') : setTheme('dark') }}>
               </div>
             </div>
         }                
@@ -29,22 +29,22 @@ const Header = () => {
         </div>
         <div className='navLinks'>
           <ul>
-            <Link to={ '/' }>
+            <Link href={'/' }>
               <li >   
                 <div className='link'>HOME</div>
               </li>
             </Link>
-            <Link to={ '/Portfolio' }>
+            <Link href={'/Portfolio' }>
               <li>
                 <div className='link'>PORTFOLIO</div>
               </li>
             </Link>
-            <Link to={ '/About' }>
+            <Link href={'/About' }>
               <li>
                 <div className='link'>ABOUT</div>
               </li>
             </Link>
-            <Link to={ '/Contact' }>
+            <Link href={'/Contact' }>
               <li>
                 <div className='link'>CONTACT</div>
               </li>

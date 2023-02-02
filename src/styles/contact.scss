@@ -1,0 +1,27 @@
+form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    grid-row: 6;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 500px;
+    height: 30px;
+    background-color: #dcdcdc;
+    @media(max-width: 520px) {
+        width: 300px;
+    }
+}
+
+textarea {
+    font-size: 16px;
+    width: 500px;
+    height: 200px;
+    background-color: #dcdcdc;
+    @media(max-width: 520px) {
+        width: 300px;
+    }
+}
