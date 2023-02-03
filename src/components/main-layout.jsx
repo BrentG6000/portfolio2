@@ -6,9 +6,11 @@ const MainLayout = ({ children }) => {
     return (
         <>
             <ThemeProvider>
-                <Header />
-                <main>{children}</main>
-                <Footer />
+                <div id='page-container'>
+                    <Header />
+                    <main>{children}</main>
+                    <Footer />
+                </div>
             </ThemeProvider>
         </>
     )

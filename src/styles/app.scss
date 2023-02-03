@@ -39,6 +39,11 @@
   font-weight: normal;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
