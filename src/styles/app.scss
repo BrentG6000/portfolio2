@@ -164,7 +164,7 @@ body.active {
   background-color: #595959;
   h1 {
     color: #e6e6e6;
-    border-bottom: 1px solid #e6e6e6;
+    //border-bottom: 1px solid #e6e6e6;
   }
   h2 {
     color: #e6e6e6;
@@ -316,19 +316,17 @@ img:hover {
   transform: translateY(0px);
 }
 
-page {
-  font-family: Lato;
-  h1 {
-    font-family: Merriweather;
-  }
-  display: inline-grid;
-  justify-items: center;
-  background-color: white;
-}
-
 .homePage {
   display: grid;
-  grid-template-rows: 10% 20% 25% 5% 5% auto;
+  grid-template-rows: 10% 15% 25% 0% 7% auto;
+  background-color: white;
+  justify-items: center;
+  font-family: Lato;
+  height: 100vh;
+  h1 {
+    font-family: Merriweather;
+    position: relative;
+  }
   P {
     line-height: 1.75;
     text-align: normal;
@@ -415,7 +413,7 @@ page {
 
 h1 {
   padding: 2px;
-  border-bottom: 1px solid;
+  //border-bottom: 1px solid;
   margin-bottom: 10px;
   grid-row: 4;
   @media(max-width: 480px) {

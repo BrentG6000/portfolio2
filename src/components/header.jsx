@@ -24,8 +24,8 @@ const Header = () => {
           <b>Brent Gustafson</b>
         </div>
         <div className='navSubtitle'>
-          <firstChar>W</firstChar>eb Developer | <firstChar>R</firstChar>eact | 
-          <firstChar>E</firstChar>xpress | <firstChar>M</firstChar>ongodb
+          <firstchar>W</firstchar>eb Developer | <firstchar>R</firstchar>eact | 
+          <firstchar>E</firstchar>xpress | <firstchar>M</firstchar>ongodb
         </div>
         <div className='navLinks'>
           <ul>
