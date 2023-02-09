@@ -34,17 +34,17 @@ const Header = () => {
                 <div className='link'>HOME</div>
               </li>
             </Link>
-            <Link href={'/Portfolio' }>
+            <Link href={'/portfolio' }>
               <li>
                 <div className='link'>PORTFOLIO</div>
               </li>
             </Link>
-            <Link href={'/About' }>
+            <Link href={'/about' }>
               <li>
                 <div className='link'>ABOUT</div>
               </li>
             </Link>
-            <Link href={'/Contact' }>
+            <Link href={'/contact' }>
               <li>
                 <div className='link'>CONTACT</div>
               </li>
