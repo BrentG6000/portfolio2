@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import Image from 'next/image'
 import ThemeProvider from "../components/contexts/theme";
 import Button from "../components/button";
 import ProjectPicture from "../images/TwitterProject.png";
@@ -15,7 +16,7 @@ const Portfolio = () => {
     <div className='portPage' id={theme === 'dark' ? 'pageDark' : ''}>
       <div className="portBox"></div>
       <h1>Twitter Profile Searcher</h1>
-      <img className="project" src={ProjectPicture} alt='' />
+      <Image className="project" src={ProjectPicture} alt='' />
       {text}
       <Button buttonText='Go to site' buttonLink='https://brentg123-twitter-project.herokuapp.com/' />
     </div>
