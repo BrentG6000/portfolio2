@@ -310,11 +310,14 @@ img:hover {
   display: grid;
   grid-template-rows: 6% 25% 13% 5% 5% 5% 5% auto;
   grid-template-columns: 20% 25% 10% 25% 20%;
+  background-color: white;
+  height: 150vh;
   @media (max-width: 1600px) {
     grid-template-columns: 10% 35% 15% 35% 10%;
   }
   @media (max-width: 1080px) {
     grid-template-rows: 6% 25% 8% 5% 5% 5% 5% auto;
+    justify-items: center;
   }
 }
 
