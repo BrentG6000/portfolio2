@@ -81,21 +81,6 @@ body.active {
     }
 }
 
-.contactWrapper {
-  display: grid;
-  grid-template-rows: 190px 1100px 190px;
-  grid-template-areas:
-    "header",
-    "content",
-    "footer";
-    @media(max-width: 720px) {
-      grid-template-rows: 175px 1100px 175px;
-    }
-    @media(max-width: 480px) {
-      grid-template-rows: 150px 1100px 150px;
-    }
-}
-
 #dark {
   background-color:  #262626;
   color: #bfbfbf;
@@ -347,7 +332,10 @@ img:hover {
 
 .contactPage {
   display: grid;
-  grid-template-rows: 6% 25% 15% 5% 5% 35% auto;
+  grid-template-rows: 6% 15% 20% 0% 5% 35% auto;
+  justify-items: center;
+  background-color: white;
+  height: 140vh;
   p {
     grid-row: 4;
   }
