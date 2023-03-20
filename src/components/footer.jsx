@@ -2,8 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image'
 import { useContext } from 'react'
 import ThemeProvider from './contexts/theme';
-import twitterLogo from '../images/TwitterLogo.png'
-import darkTwitterLogo from '../images/DarkTwitterLogo.png'
 import githubLogo from '../images/GithubLogo.png'
 import darkGithubLogo from '../images/DarkGithubLogo.png'
 import linkedInLogo from '../images/LinkedinLogo.png'
@@ -20,12 +18,6 @@ const Footer = () => {
                 </Link> 
             </div>
             <div className='footerIcons'>
-                <Link href='https://twitter.com/BrentG6000'>
-                    {theme === 'dark'
-                        ? <Image src={darkTwitterLogo} alt='' />
-                        : <Image src={twitterLogo} alt='' />
-                    }
-                </Link>
                 <Link href='https://github.com/BrentG6000'>
                     {theme === 'dark'
                         ? <Image src={darkGithubLogo} alt='' />
